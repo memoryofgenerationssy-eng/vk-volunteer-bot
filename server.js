@@ -4,8 +4,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const ACCESS_TOKEN = 'ВАШ_ТОКЕН_БОТА';
-const PEER_ID = 2000000001;
+const ACCESS_TOKEN = 'vk1.a.vzy3NfPPyC55liIjknGXxXGlrrPWAB8sk6zSbJ_1yr7Nkm7gVge229XihEHEpic9WH-y5iGpFEfVd8hSLrG_MGbIXLa8G1p1D3ZpTxyBYziAXyimfAtryDZOV7dWiVu-4araBfhQkFSgOra7Ca79jtLs77zZKbh7l_jJ_rCHchwMtV-V2YLaLAciNhtEkaLLDRoH-f7rcxRio5qr3qALJQ';
+const PEER_ID = 2000000146;
 
 app.post('/webhook', async (req, res) => {
     const { first_name, last_name, user_id, message } = req.body;
